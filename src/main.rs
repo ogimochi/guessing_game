@@ -48,9 +48,9 @@ fn main() {
         match guess.cmp(&secret_number) {
             // 小さすぎ！
             Ordering::Less => println!("Too small!"),
-            //大きすぎ！
+            // 大きすぎ！
             Ordering::Greater => println!("Too big!"),
-            //やったね！
+            // やったね！
             Ordering::Equal => {
                 println!("You win!");
                 break;
